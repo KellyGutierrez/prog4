@@ -1,0 +1,63 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css"
+/>
+
+<div class="container text-center">
+  <head>
+    <link rel="stylesheet" src="add-user.component.scss">
+  </head>
+    
+    <div class="row align-items-start">
+      <h3 style="color: blueviolet;"><i>ID</i></h3>
+      <input 
+        type="text"
+        id="id"
+        class="form-control mb-1"
+        placeholder="1045444545"
+      />
+      <h3 style="color: blueviolet;"><i>Nombre</i></h3>
+      <input
+        type="text"
+        id="name"
+        class="form-control mb-1"
+        placeholder="Camilo"
+        
+      />
+      <h3 style="color: blueviolet;"><i>Rol</i></h3>
+      <input
+        type="text"
+        id="role"
+        class="form-control mb-1"
+        placeholder="2"
+      />
+      <h3 style="color: blueviolet;"><i>Email</i></h3>
+      <input
+        type="text"
+        id="email"
+        class="form-control mb-1"
+        placeholder="cami@gmail.com"
+      />
+      <h3 style="color: blueviolet;"><i>Contraseña</i></h3>
+      <input
+        type="text"
+        id="password"
+        class="form-control mb-5"
+        placeholder="Min 8 caracteres"
+      />
+    </div>
+  </div>
+  <div class="col">
+    <button type="button" class="ov-btn-grow-spin" (click)="add()">
+      Agregar usuario
+    </button>
+  </div>
+  <div class="col">
+    <button
+      type="button"
+      class="ov-btn-grow-spin"
+      (click)="back()"
+    >
+      Regresar
+    </button>
+  </div>
